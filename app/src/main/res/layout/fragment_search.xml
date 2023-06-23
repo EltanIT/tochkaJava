@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homescreen.fragments.fragment_search"
+    android:orientation="vertical"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/search_event_et"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/sing_up_hobby_screen_edit_text_style"
+                android:hint="@string/search_hobby_et_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                />
+            <HorizontalScrollView
+                android:id="@+id/select_date_sv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/search_event_et"
+                android:layout_marginTop="24dp"
+                >
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    >
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Сегодня"
+                        android:textSize="12sp"
+                        />
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:text="Завтра"
+                        android:textSize="12sp"
+                        />
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Другая дата"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/your_orientation_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/select_date_sv"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Россия"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=", "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Оренбург"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/orientation_icon"
+                        android:scaleType="fitXY"
+                        android:layout_marginEnd="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Изменить"
+                        android:textColor="@color/grey_text"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image_orientaion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/your_orientation_ll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/enter_screen_fon"
+                    android:scaleType="fitXY"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/now_going_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проходят сейчас"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_orientaion"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                />
+
+            <HorizontalScrollView
+                android:orientation="horizontal"
+                android:id="@+id/news_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/now_going_tv"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/now_going_rv"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/home_screen_news_listview_item_model"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        />
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/select_type_event_sv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/news_scroll"
+                android:layout_marginTop="24dp"
+                >
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Учеба"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:background="@drawable/sign_up_user_hobby_two_button_hobby_style"
+                        android:backgroundTint="@color/coral_color"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:text="Общение"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:background="@drawable/sign_up_user_hobby_two_button_hobby_style"
+                        android:backgroundTint="@color/light_green"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Саморазвитие"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:background="@drawable/sign_up_user_hobby_two_button_hobby_style"
+                        android:backgroundTint="@color/purpure"
+                        />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:orientation="horizontal"
+                android:id="@+id/news_scroll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/select_type_event_sv"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/now_going_rv2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/home_screen_news_listview_item_model"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        />
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+

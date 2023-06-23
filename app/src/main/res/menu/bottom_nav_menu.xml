@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_page_fragment"
+        android:title="@string/main_page_text"
+        android:icon="@drawable/bot_nav_home_inactive_icon"
+        />
+
+    <item
+        android:id="@+id/search_page_fragment"
+        android:title="Поиск"
+        android:icon="@drawable/bot_nav_search_inactive_icon"
+        />
+
+    <item
+        android:id="@+id/notification_page_fragment"
+        android:icon="@drawable/bot_nav_notification_inactive_icon"
+        android:title="Уведомления"
+        />
+
+</menu>

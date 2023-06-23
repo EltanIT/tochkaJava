@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="enter_text">Войти</string>
+    <string name="registration_text">регистрация</string>
+    <string name="how_are_you_want_to_registrated">Как вы хотите зарегистрироваться?</string>
+    <string name="administrator_text">Администратор</string>
+    <string name="user_text">Пользователь</string>
+    <string name="hello_text">Привет!</string>
+    <string name="speak_about_yourself_text">Расскажи о себе:</string>
+    <string name="orenburg_text">Оренбург</string>
+    <string name="your_orientation_text">Ваше местоположение</string>
+    <string name="what_news_text">Что нового</string>
+    <string name="groups_in_your_city_text">Группы в вашем городе</string>
+    <string name="e_mail_text">E-mail</string>
+    <string name="pass_text">Пароль</string>
+    <string name="search_hobby_et_text">Найти увлечение</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_page_text">Главная</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_green_color">#3ACBBA</color>
+    <color name="transparent_color">#003ACBBA</color>
+    <color name="grey">#E6D9D9D9</color>
+    <color name="grey_text">#A6A6A6</color>
+
+    <color name="purpure">#CD9BFF</color>
+    <color name="light_green">#B4F894</color>
+    <color name="pink">#F5C1E4</color>
+    <color name="mint_color">#B9EBE5</color>
+    <color name="coral_color">#FC8A8A</color>
+    <color name="lilac_color">#A7A5E7</color>
+</resources>
